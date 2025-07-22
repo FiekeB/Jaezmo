@@ -28,7 +28,7 @@ jobs:
       - name: Build site
         run: |
           mkdocs build
-          ls -R site
+          ls -R site  # toont wat er is gegenereerd
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
