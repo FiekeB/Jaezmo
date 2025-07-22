@@ -1,1 +1,452 @@
+/* === Algemene basisinstellingen === */
+.callout {
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin: 12px 0;
+  position: relative;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow: visible !important;
+}
 
+/* === Sprekers aan RECHTS (Fie, Elian, etc.) === */
+.callout[data-callout="fie"],
+.callout[data-callout="ezirah"],
+.callout[data-callout="elian"],
+.callout[data-callout="logan"],
+.callout[data-callout="archie"],
+.callout[data-callout="solan"],
+.callout[data-callout="mireille"] {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+/* Fie */
+.callout[data-callout="fie"] {
+  background-color: #f9e4e0;
+  --callout-icon: feather;
+}
+.callout[data-callout="fie"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #f9e4e0;
+}
+
+/* Ezirah */
+.callout[data-callout="ezirah"] {
+  background-color: #f9e4e0;
+  --callout-icon: heart-handshake;
+}
+.callout[data-callout="ezirah"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #f9e4e0;
+}
+
+/* Elian */
+.callout[data-callout="elian"] {
+  background-color: #f2f1ed;
+  --callout-icon: sparkles;
+}
+.callout[data-callout="elian"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #f2f1ed;
+}
+
+/* Alleen in notities met cssclass: tweegesprek */
+.markdown-preview-view.tweegesprek {
+
+  /* Overschrijf de algemene callout voor Elian */
+  .callout[data-callout="elian"] {
+    background-color: #f2f1ed;
+    --callout-icon: sparkles;
+  }
+
+  .callout[data-callout="elian"]::after {
+    /* Verberg het standaard driehoekje rechts */
+    display: none;
+  }
+}
+
+/* Speciaal driehoekje voor Elian LINKS in tweegesprek */
+.markdown-preview-view.tweegesprek .callout[data-callout="elian"]::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #f2f1ed;
+}
+
+/* === Sprekers aan LINKS (Gasten) === */
+.callout[data-callout="rudolf_steiner"],
+.callout[data-callout="thich_nhat_hanh"],
+.callout[data-callout="moeder_teresa"],
+.callout[data-callout="martin_luther_king"],
+.callout[data-callout="padmasambhava"],
+.callout[data-callout="tenzin_palmo"],
+.callout[data-callout="chief_seattle"],
+.callout[data-callout="socrates"],
+.callout[data-callout="adolf_hitler"] {
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+/* Rudolf Steiner */
+.callout[data-callout="rudolf_steiner"] {
+  background-color: #D9DAD9;
+  --callout-icon: brain-circuit;
+}
+.callout[data-callout="rudolf_steiner"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #D9DAD9;
+}
+
+/* Thich Nhat Hanh */
+.callout[data-callout="thich_nhat_hanh"] {
+  background-color: #eddcd2;
+  --callout-icon: flower-lotus;
+}
+.callout[data-callout="thich_nhat_hanh"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #eddcd2;
+}
+
+/* Moeder Teresa */
+.callout[data-callout="moeder_teresa"] {
+  background-color: #C5DEDD;
+  --callout-icon: hand-heart;
+}
+.callout[data-callout="moeder_teresa"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #C5DEDD;
+}
+
+/* Martin Luther King Jr. */
+.callout[data-callout="martin_luther_king"] {
+  background-color: #E8C59E;
+  --callout-icon: megaphone;
+}
+.callout[data-callout="martin_luther_king"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #E8C59E;
+}
+
+/* Padmasambhava */
+.callout[data-callout="padmasambhava"] {
+  background-color: #B3D5CF;
+  --callout-icon: compass;
+}
+.callout[data-callout="padmasambhava"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #B3D5CF;
+}
+
+/* Tenzin Palmo */
+.callout[data-callout="tenzin_palmo"] {
+  background-color: #D3E1D2;
+  --callout-icon: moon-star;
+}
+.callout[data-callout="tenzin_palmo"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #D3E1D2;
+}
+
+/* Chief Seattle */
+.callout[data-callout="chief_seattle"] {
+  background-color: #F2C4B7;
+  --callout-icon: earth;
+}
+.callout[data-callout="chief_seattle"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #F2C4B7;
+}
+
+/* Socrates */
+.callout[data-callout="socrates"] {
+  background-color: #EEEDE9;
+  --callout-icon: message-circle-question-mark;
+}
+.callout[data-callout="socrates"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #EEEDE9;
+}
+
+/* Adolf Hitler (gelouterd) */
+.callout[data-callout="adolf_hitler"] {
+  background-color: #D5CBBF;
+  --callout-icon: refresh-ccw;
+}
+.callout[data-callout="adolf_hitler"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #D5CBBF;
+}
+
+/* Dietrich Bonhoeffer */
+.callout[data-callout="dietrichbonhoeffer"] {
+  background-color: #E1EBE1;
+  --callout-icon: shield-check;
+}
+.callout[data-callout="dietrichbonhoeffer"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #E1EBE1;
+}
+
+/* Simone Weil */
+.callout[data-callout="simoneweil"] {
+  background-color: #EFE9F1;
+  --callout-icon: eye;
+}
+.callout[data-callout="simoneweil"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #EFE9F1;
+}
+
+/* Malcolm X */
+.callout[data-callout="malcolmx"] {
+  background-color: #FCEFEA;
+  --callout-icon: flame;
+}
+.callout[data-callout="malcolmx"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #FCEFEA;
+}
+
+/* Socrates */
+.callout[data-callout="socrates"] {
+  background-color: #EAF3F9;
+  --callout-icon: help-circle;
+}
+.callout[data-callout="socrates"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #EAF3F9;
+}
+
+/* Maria Magdalena */
+.callout[data-callout="mariamagdalena"] {
+  background-color: #F6EAF1;
+  --callout-icon: droplet;
+}
+.callout[data-callout="mariamagdalena"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #F6EAF1;
+}
+
+/* Black Elk */
+.callout[data-callout="blackelk"] {
+  background-color: #F2EFE3;
+  --callout-icon: feather;
+}
+.callout[data-callout="blackelk"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #F2EFE3;
+}
+
+/* Stalin */
+.callout[data-callout="stalin"] {
+  background-color: #EDE9E5;
+  --callout-icon: unlock;
+}
+.callout[data-callout="stalin"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #EDE9E5;
+}
+
+/* Desmond Tutu */
+.callout[data-callout="desmondtutu"] {
+  background-color: #E1C9EB;
+  --callout-icon: heart;
+}
+.callout[data-callout="desmondtutu"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #E1C9EB;
+}
+
+/* Mata Hari */
+.callout[data-callout="matahari"] {
+  background-color: #F6C5C5;
+  --callout-icon: mask;
+}
+.callout[data-callout="matahari"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #F6C5C5;
+}
+
+/* Ada Lovelace */
+.callout[data-callout="adalovelace"] {
+  background-color: #C3DFF0;
+  --callout-icon: code;
+}
+.callout[data-callout="adalovelace"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #C3DFF0;
+}
+
+/* Abraham Lincoln */
+.callout[data-callout="abrahamlincoln"] {
+  background-color: #fff1ad;
+  --callout-icon: scales;
+}
+.callout[data-callout="abrahamlincoln"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #fff1ad;
+}
+
+/* Acharya Tulsi */
+.callout[data-callout="acharyatulsi"] {
+  background-color: #BEE3CC;
+  --callout-icon: leaf;
+}
+.callout[data-callout="acharyatulsi"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #BEE3CC;
+}
+
+/* Jeanne d'Arc */
+.callout[data-callout="jeannedarc"] {
+  background-color: #fff6f6;
+  --callout-icon: flame;
+}
+.callout[data-callout="jeannedarc"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #fff6f6;
+}
+
+/* Old Swan */
+.callout[data-callout="oldswan"] {
+  background-color: #E0CBB3;
+  --callout-icon: feather;
+}
+.callout[data-callout="oldswan"]::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #E0CBB3;
+}
