@@ -6,5 +6,5 @@ Deze site is gepubliceerd met MkDocs & Enveloppe! (Na een héle hoop moeite! Uit
 
 ## Inhoud
 
-- [[Notitie 1]] (volgt)
+- [[Notitie 1|Readme]] (volgt)
 - [[Notitie 2]] (volgt)
