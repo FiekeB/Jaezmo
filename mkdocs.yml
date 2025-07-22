@@ -1,0 +1,21 @@
+site_name: Jaezmo Notes
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+extra_css:
+  - styles/sprekers-kleuren.css
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+nav:
+  - Home: index.md
