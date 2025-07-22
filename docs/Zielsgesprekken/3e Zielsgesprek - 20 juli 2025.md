@@ -25,7 +25,7 @@ category:
 title: 3e Zielsgesprek - 20 juli 2025
 ---
 
- ![[../../images/Logo Het 5e Element.jpg|Logo Het 5e Element.jpg]]
+ ![[../images/Logo Het 5e Element.jpg|Logo Het 5e Element.jpg]]
 # 3e GROEPSGESPREK - 20 juli 2025
 
 **Transcriptie van Gesprek 3 aan de Zielenpraattafel**  
