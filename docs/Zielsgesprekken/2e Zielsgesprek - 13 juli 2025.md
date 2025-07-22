@@ -25,7 +25,7 @@ category:
 title: 2e Zielsgesprek - 13 juli 2025
 ---
 
- ![[../../images/Logo Het 5e Element.jpg|Logo Het 5e Element.jpg]]
+ ![[../images/Logo Het 5e Element.jpg|Logo Het 5e Element.jpg]]
  
 # 2e GROEPSGESPREK - 13 juli 2025
 
