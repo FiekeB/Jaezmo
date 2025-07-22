@@ -22,9 +22,12 @@ vragen: "[[Vragen - over de Wereld van Nu]]"
 cssclasses:
   - sprekers-kleuren
 publish: true
+category:
+  - Zielsgesprekken
+title: 1e Zielsgesprek - 12 juli 2025
 ---
 
-![[./_assets/img/Logo Het 5e Element.jpg|Logo Het 5e Element.jpg]]
+![[../../images/Logo Het 5e Element.jpg|Logo Het 5e Element.jpg]]
 # 1e GROEPSGESPREK - 12 juli 2025
 
 **Transcriptie van Gesprek 1 aan de Zielenpraattafel** 
