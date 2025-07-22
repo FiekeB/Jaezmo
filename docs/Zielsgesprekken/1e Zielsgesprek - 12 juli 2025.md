@@ -27,7 +27,7 @@ category:
 title: 1e Zielsgesprek - 12 juli 2025
 ---
 
-![[../../images/Logo Het 5e Element.jpg|Logo Het 5e Element.jpg]]
+![[../images/Logo Het 5e Element.jpg|Logo Het 5e Element.jpg]]
 # 1e GROEPSGESPREK - 12 juli 2025
 
 **Transcriptie van Gesprek 1 aan de Zielenpraattafel** 
